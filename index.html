@@ -1,0 +1,21 @@
+<html>
+<script>
+    var link = '';
+    var iOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/i) ? true : false);
+    var ua = navigator.userAgent.toLowerCase();
+    var isAndroid = ua.indexOf("android") > -1;
+    if (iOS) {
+        console.log("ios")
+        window.location.href = 'https://apps.apple.com/in/app/zattire/id1530839309';
+    } else
+    if (isAndroid) {
+        console.log("android")
+        window.location.href = 'https://play.google.com/store/apps/details?id=com.zattire.zattireuserapp';
+    } else {
+        console.log("others")
+        window.location.href = "https://app.zattire.com";
+    }
+</script>
+<p> Redirecting to Zattire... </p>
+
+</html>
